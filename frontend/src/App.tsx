@@ -27,6 +27,7 @@ function App() {
                 </div>
 
                 <DataTable/>
+                
             </div>
             <Footer/>
         </>
