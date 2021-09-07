@@ -23,7 +23,7 @@ const BarChart = () => {
     
     return (
         <Chart
-            options={{...options, xaxis: mockData.labels}}
+            options={{...options, xaxis: mockData.labels}}  //busca na mockData os labels, ...options é um acumulador do que o options já tem
             series={mockData.series}
             type="bar"
             height="240"
