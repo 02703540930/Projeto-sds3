@@ -12,6 +12,7 @@ type ChartData = {
 const DonutChart = () => {
     // componente que vai receber os dados com o useState
     const [chartData, setChartData] = useState<ChartData>({ labels: [], series: [] });
+    
     useEffect(() => {
         //requisicao para buscar soma das vendas dos vendedores
         axios.get(`${BASE_URL}/sales/amount-by-seller`)
