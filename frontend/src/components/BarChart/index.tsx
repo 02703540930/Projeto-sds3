@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Chart from 'react-apexcharts'
-import { SaleSuccess } from 'types/Sale'
+import { SaleSuccess } from 'types/sale'
 import { round } from 'utils/format'
 import { BASE_URL } from 'utils/request'
 
@@ -32,7 +32,7 @@ const BarChart = () => {
     });
 
     useEffect(() => {
-        //requisicao para buscar soma das vendas dos vendedores
+        //requisicao para buscar o percentual de sucesso das vendas dos vendedores
         axios.get(`${BASE_URL}/sales/success-by-seller`)
             .then(response => {
                 const data = response.data as SaleSuccess[];                              //cria uma constante com os dados de SaleSuccess
