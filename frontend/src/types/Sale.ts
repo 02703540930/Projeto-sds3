@@ -11,12 +11,12 @@ export type Sale = {
 
 export type SalePage = {
     content?: Sale[];
-    first: boolean;
     last: boolean;
-    totalPages: number;
     totalElements: number;
+    totalPages: number;
     size?: number;        //caracter ? serve para informar que o objeto deve ser opcionais
     number: number;    
+    first: boolean;
     numberOfElements?: number;
     empty?: boolean;
 }
