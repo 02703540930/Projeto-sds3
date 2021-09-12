@@ -1,9 +1,9 @@
 import axios from "axios";
 import Pagination from "components/Pagination";
 import { useEffect, useState } from "react";
-import { SalePage } from "types/sale";
+import { SalePage } from "types/sales";
 import { formatLocalDate } from "utils/format";
-import { BASE_URL } from "utils/request";
+import { BASE_URL } from "utils/requests";
 
 const DataTable = () => {
     const [activePage, setActivePage] = useState(0);  // funcao para mudanca de paginas
