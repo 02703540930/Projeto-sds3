@@ -14,7 +14,7 @@ export type SalePage = {
     last: boolean;
     totalElements: number;
     totalPages: number;
-    size?: number;        //caracter ? serve para informar que o objeto deve ser opcionais
+    size?: number;        //caracter esclamacao serve para informar que o objeto deve ser opcionais
     number: number;    
     first: boolean;
     numberOfElements?: number;
